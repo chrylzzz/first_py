@@ -1,3 +1,6 @@
+######
+## 列表推导式提取值
+#####
 # 定义包含字典的列表
 data = [
     {"name": "张三", "age": 20},
@@ -31,6 +34,15 @@ result = ",".join(names)
 
 print(result)  # 输出：张三,李四,王五
 #################################################
-fruits = ["苹果", "香蕉", "橙子"]
-result = ",".join(fruits)
-print(result)  # 输出：苹果,香蕉,橙子
+students = [
+    {"name": "张三", "age": 20},
+    {"name": "李四", "age": 22}
+]
+
+# 正确：先通过整数索引取列表中的字典，再用字符串键访问字典值
+print(students[0]["name"])  # 输出：张三（取第1个元素的name）
+
+# 如果要提取所有name并拼接（结合之前的需求）
+names = [s["name"] for s in students]  # 遍历列表，每个元素s是字典，用s["name"]取键值
+result = ",".join(names)
+print(result)  # 输出：张三,李四
