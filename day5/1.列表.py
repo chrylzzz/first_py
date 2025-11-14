@@ -30,6 +30,11 @@
 print("============列表函数")
 str1 = 'iiiooz'
 name_list = ['tim', 'nancy', 'cc' 'pinkman', 'cc', 'yoyo']
+name_nul_list = []
+print(len(name_nul_list))
+print(len(name_nul_list) == 0)
+print(len(name_nul_list) != 0)
+print(len(name_list))
 print(name_list)  # 去重
 print(name_list[0])
 print(name_list.index('cc'))

@@ -29,7 +29,9 @@ print(dict1)
 print(dict1.keys())
 print(dict1.values())
 print(dict1.items())
-
+print("=======新增")
+dict1["birth"] = '2020-05-27'
+print(dict1)
 print("=======删除")
 # 清空
 # dict1.clear()
