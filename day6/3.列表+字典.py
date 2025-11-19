@@ -56,3 +56,6 @@ for item in data_list:
 # print(data_list)
 pprint(data_list, indent=2)
 # item['name'] + '-' + item['']
+print("-----------------取前1个")
+list3 = data_list[:1]
+print(list3)
