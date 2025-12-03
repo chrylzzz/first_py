@@ -4,7 +4,7 @@ import random
 import time
 import sys
 '''
-模拟LLM
+模拟LLM，本地执行
 '''
 
 # ==================== 模拟回复配置 ====================
