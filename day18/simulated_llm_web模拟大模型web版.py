@@ -227,33 +227,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-'''
-第一步：启动服务
-# 默认配置（0.0.0.0:8080）
-python simulated_llm_post_only.py
-
-# 自定义端口（如 8000）
-python simulated_llm_post_only.py --port 8000
-
-# 绑定本地地址（仅本机可访问）
-python simulated_llm_post_only.py --host 127.0.0.1 --port 8081
-
-------------------------------------------------------------------
-方式 1：命令行 curl
-curl -X POST http://localhost:8080/api/chat \
-  -H "Content-Type: application/json" \
-  -d '{"question":"Python 如何处理 JSON 数据？"}'
-------------------------------------------------------------------
-import requests
-
-# 接口地址
-url = "http://localhost:8080/api/chat"
-# 请求数据
-data = {"question": "如何提高数据分析效率？"}
-# 发送 POST 请求
-response = requests.post(url, json=data)
-# 打印结果
-print("响应状态码：", response.status_code)
-print("响应内容：", response.json())
-'''
