@@ -37,8 +37,10 @@ print(eval('(1,2,3,4)'))  # 元组
 num1, float1, str1 = 1, 2.4, 'abc'
 # 多变量赋相同的值
 a = b = 100
+print(a)
+print(b)
 
 # 复合运算,注意
 c = 10
 c *= 1 + 3  # 先 1+3 在c*3:先算复合运算符右边的,再算复合运算
-print()
+print(c)

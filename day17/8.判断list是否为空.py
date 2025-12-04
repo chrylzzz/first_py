@@ -35,6 +35,7 @@ data_list = [
     {"name": "苹果", "price": 5.99, "desc": "", "stock": "   "},  # 空值key会被删，对象保留
     {"name": "", "price": None, "desc": "\t"},  # 处理后无有效key，会被删除
     {},  # 纯空对象，直接删除
+    {},  # 纯空对象，直接删除
     {"name": "香蕉", "price": 3.99, "desc": "新鲜"},  # 无空值，完整保留
     "非字典元素",  # 非字典，保留
     {"name": "", "price": '', "stock": None}  # 空值key删除，对象保留
