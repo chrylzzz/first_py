@@ -60,11 +60,15 @@ def update_info():
 # 查询
 def find_info():
     this_name = input('请输入名字:')
+    # 找到则为 true
+    get_flag = False
     for i in info:
         if this_name in i['name']:
             print(f'编号:{i["id"]},姓名:{i["name"]},电话:{i["tel"]}')
+            get_flag = True
             break
-    print('您查询的名字不存在')
+    if get_flag is False:
+        print('您查询的名字不存在')
 
 
 # 显示所有

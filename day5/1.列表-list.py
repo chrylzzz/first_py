@@ -20,6 +20,9 @@
     .pop(下标) ,指定下标删除,默认删除最后一个,无论如何都返回数据
     .remove(数据) , 删除指定的数据(只第一个匹配项)
     .clear() 清空列表,为空列表:None
+查询:
+    list[0]
+    list[1]
 修改:
     .reverse(),逆置
     .sort(key=None,reverse=False):reverse表示排序规则,=True为降序,=false为升序,key暂时用不到

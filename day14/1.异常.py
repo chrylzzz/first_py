@@ -9,7 +9,7 @@
 """
 
 try:
-    f = open('test.txt', 'r')
+    f = open('test-file.txt', 'r')
 except:
     f = open('testzzz.txt', 'w')
 
