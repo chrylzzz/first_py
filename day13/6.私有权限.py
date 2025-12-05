@@ -12,6 +12,7 @@
 """
 
 
+# 父
 class User():
     def __init__(self):
         self.kf = 'kf'
@@ -31,13 +32,22 @@ class User():
         self.__myKf = kf
 
 
+# 子
 class Man(User):
     pass
 
 
+# 子类
 man = Man()
-man.kf
+print(f"公有属性：{man.kf}")
+# 'Man' object has no attribute '__myKf'
+# print(f"私有属性：{man.__myKf}")
+print(f"获取共有属性：{man.get_Kf()}")
+# 赋值私有属性
+man.set_Kf("200")
+print(f"获取私有属性：{man.get_Kf()}")
 
+# 父类
 user = User()
 user.set_Kf('300')
-print(user.get_Kf())
+print(f"父获取私有属性：{user.get_Kf()}")

@@ -99,3 +99,9 @@ print(str6.isalnum())
 print(str7.isspace())
 
 print('===================')
+"""
+    .split(分隔符):字符串分割,根据分隔符继续呢分割,返回分隔后的list
+"""
+str8 = 'nancy,2022-12-09,1260,消费,正式'
+split_list = str8.split(",")
+print(split_list)

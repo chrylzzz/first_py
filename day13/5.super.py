@@ -8,7 +8,7 @@ class Mas():
         self.kf = 'kongfu'
 
     def make(self):
-        print(f'{self.kf}')
+        print(f'Mas：{self.kf}')
 
 
 class Per(Mas):
@@ -16,7 +16,7 @@ class Per(Mas):
         self.kf = '独创kongfu'
 
     def make(self):
-        print(f'{self.kf}')
+        print(f'Per：{self.kf}')
 
     def make_sup(self):
         # 1.有参super :调用当前父类的方法

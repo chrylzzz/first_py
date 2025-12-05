@@ -20,7 +20,7 @@ class Mas():
         self.kf = 'kongfu'
 
     def make(self):
-        print(f'{self.kf}')
+        print(f'Mas：{self.kf}')
 
 
 # 父
@@ -29,7 +29,7 @@ class Sch():
         self.shuijiao = 'shuijiao'
 
     def make(self):
-        print(f'{self.shuijiao}')
+        print(f'Sch：{self.shuijiao}')
 
 
 # 单继承
@@ -41,7 +41,7 @@ class Per(Mas):
 class Per2(Mas, Sch):
     pass
 
-
+# 单继承
 per = Per()
 per.make()
 

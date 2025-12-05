@@ -3,15 +3,15 @@
 
 """
 
-
+# 父类
 class Mas():
     def __init__(self):
         self.kf = 'kongfu'
 
     def make(self):
-        print(f'{self.kf}')
+        print(f'Mas：{self.kf}')
 
-
+# 子类
 class Per(Mas):
     def __init__(self):
         self.kf = '独创kongfu'
@@ -21,7 +21,7 @@ class Per(Mas):
         ############################就必须把自己的init 执行以下
         # 因为要用子类的方法和属性
         self.__init__()
-        print(f'{self.kf}')
+        print(f'Per：{self.kf}')
 
     # 注意传入self
     def make_mas(self):
