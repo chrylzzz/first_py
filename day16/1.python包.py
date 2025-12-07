@@ -18,13 +18,25 @@
     步骤:1.在__init__.py设置all列表
         2.再from 包名 import *
 """
-import day16.myPackage.first.my_mod1 as m1
-from day16.myPackage.first import *
+# 1.引入包名,无别名
+import day16.myPackage.first.my_mod1
 
+# 1.使用包名全路径.方法
+day16.myPackage.first.my_mod1.info_pri1()
+
+############################################################
+# 2.引入包名,使用别名
+import day16.myPackage.first.my_mod1 as m1
+
+# 2.别名调用
 m1.info_pri1()
 print('------')
-my_mod2.info_pri2()
-##################注意为什么是:1212??????
+## 这里调用 my_mod1里的方法,则无法调用,因为使用了m1别名
+my_mod1.info_pri1()
 
-## 这里调用 my_mod1里的方法，则无法调用
-# my_mod1.info_pri1()
+############################################################
+# 3.使用from 包名 import *,这种方式导入的时候,init文件中必须有all配置
+from day16.myPackage.first import *
+
+# 3.my_mod2使用import * 导入的,那么就必须在init中声明all列表
+my_mod2.info_pri2()

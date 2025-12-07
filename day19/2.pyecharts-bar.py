@@ -19,19 +19,37 @@ list3 = [
     {"value": 43, "percent": 43 / (33 + 43)},
 ]
 
-c = (
-    Bar(init_opts=opts.InitOpts(theme=ThemeType.LIGHT))
-        .add_xaxis([1, 2, 3, 4, 5])
-        .add_yaxis("大模型A", list2, stack="stack1", category_gap="50%")
-        .add_yaxis("大模型B", list3, stack="stack1", category_gap="50%")
-        .set_series_opts(
-        label_opts=opts.LabelOpts(
-            position="right",
-            formatter=JsCode(
-                "function(x){return Number(x.data.percent * 100).toFixed() + '%';}"
-            ),
-        )
+# 创建bar
+bar = Bar(init_opts=opts.InitOpts(theme=ThemeType.LIGHT))
+
+bar.add_xaxis([1, 2, 3, 4, 5])
+bar.add_yaxis("大模型A", list2, stack="stack1", category_gap="50%")
+bar.add_yaxis("大模型B", list3, stack="stack1", category_gap="50%")
+bar.set_series_opts(
+    label_opts=opts.LabelOpts(
+        position="right",
+        formatter=JsCode(
+            "function(x){return Number(x.data.percent * 100).toFixed() + '%';}"
+        ),
     )
-        # .render("stack_bar_percent（柱状图）.html")
-        .render(path="./echarts_file/stack_bar_percent（柱状图）.html")
 )
+# .render("stack_bar_percent（柱状图）.html")
+bar.render(path="./echarts_file/stack_bar_percent（柱状图）.html")
+
+# 一行代码创建bar
+# c = (
+#     Bar(init_opts=opts.InitOpts(theme=ThemeType.LIGHT))
+#         .add_xaxis([1, 2, 3, 4, 5])
+#         .add_yaxis("大模型A", list2, stack="stack1", category_gap="50%")
+#         .add_yaxis("大模型B", list3, stack="stack1", category_gap="50%")
+#         .set_series_opts(
+#         label_opts=opts.LabelOpts(
+#             position="right",
+#             formatter=JsCode(
+#                 "function(x){return Number(x.data.percent * 100).toFixed() + '%';}"
+#             ),
+#         )
+#     )
+#         # .render("stack_bar_percent（柱状图）.html")
+#         .render(path="./echarts_file/stack_bar_percent（柱状图）.html")
+# )

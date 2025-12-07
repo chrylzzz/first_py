@@ -30,6 +30,8 @@
 复制:
     list.copy():复制,数据进行修改的时候,一般都会复制一份数据
 """
+from faker import Faker
+
 print("============列表函数")
 str1 = 'iiiooz'
 name_list = ['tim', 'nancy', 'cc' 'pinkman', 'cc', 'yoyo']
@@ -89,3 +91,8 @@ print(sor_lis)
 print("---------复制")
 cop_lis = sor_lis.copy()
 print(cop_lis)
+print("---------list截取")
+# 初始化 Faker（默认英文数据，中文用 Faker('zh_CN')）
+fake = Faker('zh_CN')  # 中文模拟数据
+names = [fake.name() for _ in range(134)]
+print(names[:5])
