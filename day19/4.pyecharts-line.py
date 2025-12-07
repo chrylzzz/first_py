@@ -8,5 +8,6 @@ c = (
         .add_yaxis("商家A", Faker.values())
         .add_yaxis("商家B", Faker.values())
         .set_global_opts(title_opts=opts.TitleOpts(title="Line-基本示例"))
-        .render("line_base（折线图）.html")
+        # .render("line_base（折线图）.html")
+        .render(path="./echarts_file/line_base（折线图）.html")
 )

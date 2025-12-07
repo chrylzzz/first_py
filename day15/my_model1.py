@@ -7,8 +7,13 @@ __all__ = ['testA']
 
 
 def testA():
-    print("testA")
+    print("AAAAAA")
 
 
 def testB():
     print("BBBBBB")
+
+
+if __name__ == '__main__':
+    testA()
+    testB()

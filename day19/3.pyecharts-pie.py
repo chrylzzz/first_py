@@ -14,5 +14,6 @@ c = (
         legend_opts=opts.LegendOpts(pos_left="15%"),
     )
         .set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {c}"))
-        .render("pie_position（饼图）.html")
+        # .render("pie_position（饼图）.html")
+        .render(path="./echarts_file/pie_position（饼图）.html")
 )

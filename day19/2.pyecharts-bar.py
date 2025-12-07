@@ -32,5 +32,6 @@ c = (
             ),
         )
     )
-        .render("stack_bar_percent（柱状图）.html")
+        # .render("stack_bar_percent（柱状图）.html")
+        .render(path="./echarts_file/stack_bar_percent（柱状图）.html")
 )

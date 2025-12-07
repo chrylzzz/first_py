@@ -1,7 +1,7 @@
 """
 @author Chr.yl
 包:
-    多个模块放在一个文件夹下,并且这个文件夹创建一个名字为 __init__.py 文件,name这个文件夹就成为包
+    包就是一个文件夹,多个模块放在一个文件夹下,并且这个文件夹下包含创建一个名字为 __init__.py 文件,那么这个文件夹就成为包
     __init__.py 会自动创建
 制作包:
     new -> python package
@@ -18,8 +18,8 @@
     步骤:1.在__init__.py设置all列表
         2.再from 包名 import *
 """
-import myPackage.first.my_mod1 as m1
-from myPackage.first import *
+import day16.myPackage.first.my_mod1 as m1
+from day16.myPackage.first import *
 
 m1.info_pri1()
 print('------')
