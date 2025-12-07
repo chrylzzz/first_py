@@ -40,3 +40,4 @@ map.set_global_opts(
 
 # 渲染图表到文件
 map.render(path="./echarts_file/chryl_test_map.html")
+
