@@ -23,5 +23,3 @@ class Per(Mas):
 
 print(Per.mro())
 # [<class '__main__.Per'>, <class '__main__.Mas'>, <class 'object'>]
-
-
