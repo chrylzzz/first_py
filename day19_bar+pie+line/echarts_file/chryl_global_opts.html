@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="5fd1228f28fb4709a3197eaa0ad2dac7" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="38fca8690463461a90956044160877e2" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_5fd1228f28fb4709a3197eaa0ad2dac7 = echarts.init(
-            document.getElementById('5fd1228f28fb4709a3197eaa0ad2dac7'), 'white', {renderer: 'canvas'});
-        var option_5fd1228f28fb4709a3197eaa0ad2dac7 = {
+        var chart_38fca8690463461a90956044160877e2 = echarts.init(
+            document.getElementById('38fca8690463461a90956044160877e2'), 'white', {renderer: 'canvas'});
+        var option_38fca8690463461a90956044160877e2 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -49,7 +49,7 @@
     "series": [
         {
             "type": "line",
-            "name": "\u5546\u5bb6A",
+            "name": "GDP",
             "connectNulls": false,
             "symbolSize": 4,
             "showSymbol": true,
@@ -58,90 +58,16 @@
             "step": false,
             "data": [
                 [
-                    "\u6cb3\u9a6c",
-                    26
+                    "CN",
+                    30
                 ],
                 [
-                    "\u87d2\u86c7",
-                    120
+                    "USA",
+                    35
                 ],
                 [
-                    "\u8001\u864e",
-                    120
-                ],
-                [
-                    "\u5927\u8c61",
-                    122
-                ],
-                [
-                    "\u5154\u5b50",
-                    137
-                ],
-                [
-                    "\u718a\u732b",
-                    131
-                ],
-                [
-                    "\u72ee\u5b50",
-                    57
-                ]
-            ],
-            "hoverAnimation": true,
-            "label": {
-                "show": true,
-                "position": "top",
-                "margin": 8
-            },
-            "lineStyle": {
-                "show": true,
-                "width": 1,
-                "opacity": 1,
-                "curveness": 0,
-                "type": "solid"
-            },
-            "areaStyle": {
-                "opacity": 0
-            },
-            "zlevel": 0,
-            "z": 0
-        },
-        {
-            "type": "line",
-            "name": "\u5546\u5bb6B",
-            "connectNulls": false,
-            "symbolSize": 4,
-            "showSymbol": true,
-            "smooth": false,
-            "clip": true,
-            "step": false,
-            "data": [
-                [
-                    "\u6cb3\u9a6c",
-                    93
-                ],
-                [
-                    "\u87d2\u86c7",
-                    94
-                ],
-                [
-                    "\u8001\u864e",
-                    130
-                ],
-                [
-                    "\u5927\u8c61",
-                    25
-                ],
-                [
-                    "\u5154\u5b50",
-                    99
-                ],
-                [
-                    "\u718a\u732b",
-                    137
-                ],
-                [
-                    "\u72ee\u5b50",
-                    37
+                    "UK",
+                    20
                 ]
             ],
             "hoverAnimation": true,
@@ -167,12 +93,10 @@
     "legend": [
         {
             "data": [
-                "\u5546\u5bb6A",
-                "\u5546\u5bb6B"
+                "GDP"
             ],
             "selected": {
-                "\u5546\u5bb6A": true,
-                "\u5546\u5bb6B": true
+                "GDP": true
             },
             "show": true,
             "padding": 5,
@@ -200,7 +124,6 @@
     },
     "xAxis": [
         {
-            "name": "X\u8f74\u540d\u79f0",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -221,19 +144,14 @@
                 }
             },
             "data": [
-                "\u6cb3\u9a6c",
-                "\u87d2\u86c7",
-                "\u8001\u864e",
-                "\u5927\u8c61",
-                "\u5154\u5b50",
-                "\u718a\u732b",
-                "\u72ee\u5b50"
+                "CN",
+                "USA",
+                "UK"
             ]
         }
     ],
     "yAxis": [
         {
-            "name": "Y\u8f74\u540d\u79f0",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -257,15 +175,111 @@
     ],
     "title": [
         {
-            "text": "Line-\u57fa\u672c\u793a\u4f8b",
+            "text": "GDP\u5c55\u793a",
             "left": "center",
             "bottom": "1%",
             "padding": 5,
             "itemGap": 10
         }
-    ]
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "xAxisIndex": false,
+                "yAxisIndex": false,
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            },
+            "brush": {
+                "icon": {},
+                "title": {
+                    "rect": "\u77e9\u5f62\u9009\u62e9",
+                    "polygon": "\u5708\u9009",
+                    "lineX": "\u6a2a\u5411\u9009\u62e9",
+                    "lineY": "\u7eb5\u5411\u9009\u62e9",
+                    "keep": "\u4fdd\u6301\u9009\u62e9",
+                    "clear": "\u6e05\u9664\u9009\u62e9"
+                }
+            }
+        }
+    },
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 100,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
 };
-        chart_5fd1228f28fb4709a3197eaa0ad2dac7.setOption(option_5fd1228f28fb4709a3197eaa0ad2dac7);
+        chart_38fca8690463461a90956044160877e2.setOption(option_38fca8690463461a90956044160877e2);
     </script>
 </body>
 </html>

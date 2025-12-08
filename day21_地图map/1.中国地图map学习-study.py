@@ -2,6 +2,7 @@
 date 2025/12/7
 @author chryl
 
+全国地图:china
 """
 from pyecharts import options as opts
 from pyecharts.charts import Map
@@ -18,4 +19,4 @@ map_china = (
     )
 )
 # 保存到echarts_file，路径简单易找
-map_china.render("./echarts_file/chryl_study_map.html")
+map_china.render("./echarts_file/1chryl_study_map.html")
