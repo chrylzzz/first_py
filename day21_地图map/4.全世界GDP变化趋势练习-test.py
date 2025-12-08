@@ -6,6 +6,7 @@ from pyecharts.globals import ThemeType
 """
 柱状图基本使用
 柱状图:翻转X轴和Y轴
+没做完
 """
 # 1. 创建地图实例（中国地图，深色主题）
 # bar = Bar(init_opts=opts.InitOpts(theme=ThemeType.DARK, width="1600px", height="700px"))
