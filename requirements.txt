@@ -17,6 +17,7 @@ echarts-countries-pypkg==0.1.6      # pyecharts地图数据（兼容1.9.x）
 echarts-china-provinces-pypkg==0.0.3 # 中国省份地图（兼容1.9.x）
 openpyxl==3.0.10              # Excel读写（xlsx，3.7+兼容）
 xlrd==1.2.0                   # Excel读写（xls，3.7+支持，2.0+放弃Python 3.7）
+pymysql==1.1.1
 
 # ===================== 大模型/AI相关库 =====================
 transformers==4.28.4          # Hugging Face模型库（3.7+支持，4.30+需Python 3.8+）
