@@ -27,7 +27,8 @@ conn.select_db("chryl")
 # 查询数据
 cursor.execute("select * from user")
 # 查询结果
-result = cursor.fetchall()
+result: tuple = cursor.fetchall()
+# 查看结果
 for data in result:
     print(data)
 # 关闭到数据库的链接
