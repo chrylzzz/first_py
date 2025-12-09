@@ -20,3 +20,4 @@ map_china = (
 )
 # 保存到echarts_file，路径简单易找
 map_china.render("./echarts_file/1chryl_study_map.html")
+print("热力图已生成，文件名为：中国新冠疫情热力图(echarts_file/chryl_study_map).html")
