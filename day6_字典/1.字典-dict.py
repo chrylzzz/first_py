@@ -3,7 +3,8 @@
     类似于map,键值对,无序,无效标,键名查询,创建空字典为{}
 
 获取:
-    .get(key,默认值):查找的key不存在返回默认值,如果无第二个参数返回none
+    .get(key):查找的key对应的value,如果无返回None
+    .get(key,默认值):查找的key不存在返回默认值,如果无第二个参数返回None
     xxx[key]:可以获取,可以赋值,不存在报错
     .keys():查找所有的key,返回可迭代对象
     .values():查找所有的值,返回可迭代对象
@@ -21,7 +22,12 @@ dict1 = {
     "age": 20,
     'gender': 'f'
 }
-print(dict1.get('name'))
+# get value
+print(f"测试get方法: {dict1.get('name')}")
+# None
+print(f"测试get方法: {dict1.get('chryl')}")
+# dict get value or default value
+print(f"测试get方法: {dict1.get('chryl', "11234")}")
 print(dict1['name'])
 dict1['id'] = 10  # 可以直接添加,如果有数据就修改
 print(dict1)
